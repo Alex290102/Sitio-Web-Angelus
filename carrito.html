@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Angelus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo_angelus_2.png" width="220px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Principal</a></a></li>
+                    <li><a href="productos 1.html">Productos</a></a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Cuenta</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" width="30px" height="30px">
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div> 
+
+    <!-------------car items---------------->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="1 fente.png">
+                        <div>
+                            <p>Chamarra 1</p>
+                            <small>Precio $50.00</small>
+                            <a href="">Borrar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contacto</h3>
+                    <p><strong>Dirección:</strong> Blvd. Hilario Medina 314, Killian, 37260 León de los Aldama, Gto.</p>
+                    <p><strong>Teléfono:</strong> +52 477 764 1278</p>
+                    <p><strong>Horario:</strong> Domingo y lunes 10:00 - 18:00 <br> Martes a Sábado 10:00 - 20:00</p>
+                        <h4><strong>¡Siguenos!</strong></h4>
+                        <div class="icon">
+                           <img src="facebook.png">
+                           <img src="x.png">
+                           <img src="instagram.png">
+                           <img src="whatsapp.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="logo_angelus_2.png">
+                        <p>Somos fabricantes de Chamarras
+                            Universitarias de paño y piel,
+                            personalizamos a gusto del cliente
+                            y enviamos a toda la República
+                            Mexicana.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Sobre</h3>
+                        <ul>
+                            <li>Sobre nosotros</li>
+                            <li>Información de entrega</li>
+                            <li>Política de privacidad</li>
+                            <li>Términos y condiciones</li>
+                            <li>Contáctanos</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Mi cuenta</h3>
+                        <ul>
+                            <li>Ver carrito</li>
+                            <li>Mi wishlist</li>
+                            <li>Facturación</li>
+                            <li>Ayuda</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <p class="copyright">&copy; 2024 Angelus. Todos los Derechos Reservados</p>
+        </div>
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+            }
+        </script>
+
+</body>
+</html>
